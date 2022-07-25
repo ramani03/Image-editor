@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color:#4ABDAC ;
+}
+.container{
+    width: 800px;
+    box-shadow: 0 10px 25px gray;
+    border-radius: 20px;
+    padding: 30px 45px 45px;
+    background-color:lavender ;
+}
+.container .wrapper{
+    display: flex;
+    margin: 25px 0;
+    min-height: 340px;
+}
+.container.stop :where(.editor-panel, .resetfilter, .save)
+{
+    pointer-events: none;
+    opacity: 0.8;
+}
+.wrapper .editor-panel{
+    padding: 20px 20px;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+.editor-panel .title{
+margin-bottom: 13px;
+font-size: 17px;
+display: block;
+}
+.editor-panel .option , .control{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.editor-panel button{
+    font-size: 14px;
+    height: 40px;
+    margin-bottom: 10px;
+    
+}
+.editor-panel button:hover{
+    background-color: grey;
+}
+.editor-panel .filter button{
+    width: calc(100% / 2 - 6px);
+}
+.editor-panel .rotate button{
+    width: calc(100% / 4 - 3px);
+}
+.filter button.ab{
+    background:#5372f0 ;
+}
+.filter .slider{
+margin-top: 13px;
+}
+.filter .slider .filterinfo{
+display: flex;
+justify-content: space-between;
+font-size: 16px;
+
+}
+.filter .slider input{
+    width: 100%;
+    height: 6px;
+    accent-color: #5372f0;
+}
+.editor-panel .rotate{
+    margin-top: 16px;
+}
+.rotate button:nth-child(3),.rotate button:nth-child(4){
+    font-size: 19px;
+}
+.wrapper .preimg{
+    margin-left: 30px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.preimg img{
+    max-height: 350px;
+    max-width: 600px;
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+.control button{
+    padding: 12px 19px;
+    font-size: 15px;
+    border-radius: 5px;
+
+}
+.control .resetfilter{
+    background-color: black;
+    color: white;
+    }
+ .control .choose{
+    background-color:black;
+    color: white;
+    margin-right: 20px;
+ }   
+ .control .save{
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+ }
+ .control .resetfilter:hover{
+    background-color: #EC3D5A;
+    
+    }
+ 
